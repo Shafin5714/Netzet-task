@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen font-figtree">
-      <div className="text-[16px] md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-gradient-to-r from-[#FC004E] via-[#9c538a]  to-[#10CBE0]">
+      <div className="text-[16px] md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0]">
         <div>
           <span className="text-[#00E7F9] text-shadow-xs font-extrabold ">
             🚀 FRESH BEGINNINGS SALE:
