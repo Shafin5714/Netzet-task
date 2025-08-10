@@ -3,20 +3,36 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="min-h-screen font-figtree bg-[#000002]">
-      <div className="text-[22px] h-[46px] flex items-center gap-1 justify-center bg-gradient-to-r from-[#FC004E] via-[#9c538a]  to-[#10CBE0]">
-        <span className="text-[#00E7F9] text-shadow-xs font-extrabold ">
-          🚀 FRESH BEGINNINGS SALE:
-        </span>
+    <div className="min-h-screen font-figtree">
+      <div className="text-[16px] md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-gradient-to-r from-[#FC004E] via-[#9c538a]  to-[#10CBE0]">
+        <div>
+          <span className="text-[#00E7F9] text-shadow-xs font-extrabold ">
+            🚀 FRESH BEGINNINGS SALE:
+          </span>
+          <span className="font-semibold"> Extra 25% OFF,</span>
+        </div>
+
         <span className="font-semibold">
-          Extra 25% OFF, Limited Spots - start your journey today!
+          Limited Spots - start your journey today!
         </span>
       </div>
       <div className="max-w-[70rem] mx-auto">
         {/* Hero section */}
-        <div className=" pt-[35px] flex justify-between">
-          <Image src="/logo.svg" height={74} width={173.12} alt="logo" />
-          <div className="flex gap-[40px]">
+        <div className="pt-[35px] flex justify-center md:justify-between">
+          <div className="flex items-center justify-center relative w-full md:w-auto">
+            <Image src="/logo.svg" height={74} width={173.12} alt="logo" />
+            <div className="absolute right-7 md:hidden cursor-pointer">
+              <Image
+                src="/hamburger-icon.png"
+                style={{ objectFit: "contain" }}
+                height={12}
+                width={20}
+                alt="logo"
+              />
+            </div>
+          </div>
+
+          <div className="hidden md:flex gap-[40px] mr-13">
             <Link href="/" className="text-[18px] text-[#A9A9A9]">
               About us
             </Link>
@@ -27,21 +43,37 @@ export default function Home() {
         </div>
 
         {/* Main */}
-        <div className="grid grid-cols-[1fr_auto] gap-0 relative z-20">
-          <div className="mt-[56px] font-urbanist w-[516px]">
-            <h2 className="text-[35px] font-bold">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-0 relative z-20">
+          <div className="flex justify-center md:justify-start md:flex-shrink-0 md:-ml-40 -z-10 order-1 md:order-2">
+            <div className="relative w-[350px] h-[400px] md:w-[666px] md:h-[679px]">
+              <Image
+                src="/hero-image.png"
+                alt="Hero image"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+          <div className="mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0">
+            <h2 className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] font-bold leading-10">
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h2>
             <h2
-              className="text-[35px] text-[#00E7F9] font-bold "
+              className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] text-[#00E7F9] font-bold leading-10 mt-1"
               style={{
                 textShadow: "0px 3px 0 #C2003C",
               }}
             >
               Discover your way to success with Fametonic:
             </h2>
-            <div className="flex gap-2.5 mt-[16px] ">
-              <Image src="/star.png" height={22} width={25} alt="point" />
+            <div className="flex gap-2.5 mt-[16px] items-start justify-start">
+              <Image
+                src="/star.png"
+                style={{ objectFit: "contain" }}
+                height={22}
+                width={25}
+                alt="point"
+              />
               <p className="text-[16px]">
                 Start growing your influence right away—no waiting required!
               </p>
@@ -59,14 +91,19 @@ export default function Home() {
                 lessons
               </p>
             </div>
-            <div className="flex gap-2.5 mt-[13px]">
-              <Image src="/star.png" height={22} width={25} alt="point" />
-
+            <div className="flex gap-2.5 mt-[13px] items-start justify-start">
+              <Image
+                src="/star.png"
+                height={22}
+                width={25}
+                style={{ objectFit: "contain" }}
+                alt="point"
+              />
               <p className="text-[16px]">
                 Use a Personal AI Worker to boost your content
               </p>
             </div>
-            <div className="flex gap-2.5 mt-[13px]">
+            <div className="flex gap-2.5 mt-[13px] items-start justify-start">
               <Image
                 src="/star.png"
                 height={22}
@@ -78,29 +115,21 @@ export default function Home() {
                 Learn from expert-led courses designed for aspiring influencers
               </p>
             </div>
-            <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
-              <span className="text=[20px]">GET STARTED</span>
-              <Image src="/arrow-right.png" alt="icon" height={5} width={8} />
-            </button>
+            <div className="flex flex-col items-center md:items-start">
+              <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
+                <span className="text=[20px]">GET STARTED</span>
+                <Image src="/arrow-right.png" alt="icon" height={5} width={8} />
+              </button>
 
-            <p className="font-figtree mt-2.5">
-              1-minute quiz for personalized Insights
-            </p>
-            <p className="font-figtree text-[#ABABAB] text-[12px] mt-[30px]">
-              By clicking &quot;Get Started&quot;, you agree with Terms and
-              Conditions, Privacy Policy, Subscription Terms
-            </p>
-            <p className="font-figtree text-[#ABABAB] text-[10px] mt-[12px]">
-              Fametonic 2025 ©All Rights Reserved.
-            </p>
-          </div>
-          <div className="flex-shrink-0 -ml-40 -z-10">
-            <Image
-              src="/hero-image.png"
-              width={666}
-              height={679}
-              alt="Hero image"
-            />
+              <p className="mt-2.5">1-minute quiz for personalized Insights</p>
+              <p className="text-[#ABABAB] text-[12px] mt-[30px]">
+                By clicking &quot;Get Started&quot;, you agree with Terms and
+                Conditions, Privacy Policy, Subscription Terms
+              </p>
+              <p className="text-[#ABABAB] text-[10px] mt-[12px]">
+                Fametonic 2025 ©All Rights Reserved.
+              </p>
+            </div>
           </div>
         </div>
       </div>
