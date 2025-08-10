@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen font-figtree">
       <div className="text-[16px] md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0]">
-        <div className="flex items-center">
+        <div className="flex items-center gap-1">
           <div className="text-[#00E7F9] text-shadow-xs font-extrabold flex items-center gap-2">
             <div className="w-6 h-5 relative">
               <Image
