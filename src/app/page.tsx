@@ -58,7 +58,7 @@ export default function Home() {
                 src="/hero-image.png"
                 alt="Hero image"
                 fill
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: "contain" }}
               />
             </div>
           </div>
