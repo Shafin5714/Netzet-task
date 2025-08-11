@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen font-figtree">
-      {/* Nav Section */}
-      <div className="text-[16px] w-full  md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0] px-2 md:px-0">
+      {/* Banner Section */}
+      <section className="text-[16px] w-full  md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0] px-2 md:px-0">
         <div className="flex items-center gap-1">
           <div className="text-[#00E7F9] font-extrabold flex items-center gap-1 ">
             <div className="w-5 h-5 md:w-7 md:h-7 relative">
@@ -19,9 +19,9 @@ export default function Home() {
         <span className="font-semibold">
           Limited Spots - start your journey today!
         </span>
-      </div>
+      </section>
 
-      {/* Hero section */}
+      {/* Main Content */}
       <div className="max-w-[1440px] md:px-[160px] mx-auto">
         <div className="pt-[35px] flex justify-center md:justify-between">
           <div className="flex items-center justify-center relative w-full md:w-auto">
@@ -47,10 +47,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Main */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
+        {/* Hero Section */}
+        <section className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
           <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2 px-3 md:px-0">
-            <div className="relative w-full h-[400px] md:w-[666px] md:h-[679px]  ">
+            <div className="relative w-full h-[400px] md:w-[666px] md:h-[679px]">
               <Image
                 src="/hero-image.png"
                 alt="Hero image"
@@ -59,7 +59,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="md:mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0 md:-mr-20">
+          <div className="md:mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0 md:-mr-12">
             <h2 className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] font-bold leading-10">
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h2>
@@ -148,7 +148,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
