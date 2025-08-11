@@ -52,13 +52,13 @@ export default function Home() {
 
         {/* Main */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
-          <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2">
-            <div className="relative w-[350px] h-[400px] md:w-[666px] md:h-[679px]">
+          <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2 px-5 md:px-0">
+            <div className="relative w-full h-[400px] md:w-[666px] md:h-[679px]  ">
               <Image
                 src="/hero-image.png"
                 alt="Hero image"
                 fill
-                className="object-cover"
+                style={{ objectFit: "cover" }}
               />
             </div>
           </div>
@@ -123,8 +123,8 @@ export default function Home() {
                 Learn from expert-led courses designed for aspiring influencers
               </p>
             </div>
-            <div className="flex flex-col items-center md:items-start">
-              <div className="order-2 md:order-1">
+            <div className="flex flex-col items-center md:items-start ">
+              <div className="order-2 md:order-1 pb-10 md:pb-0">
                 <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
                   <span className="text=[20px]">GET STARTED</span>
                   <Image
