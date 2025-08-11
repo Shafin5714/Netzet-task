@@ -4,16 +4,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="min-h-screen font-figtree">
-      <div className="text-[16px] md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0]">
+      {/* Nav Section */}
+      <div className="text-[16px] w-full  md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0] px-2 md:px-0">
         <div className="flex items-center gap-1">
-          <div className="text-[#00E7F9] text-shadow-xs font-extrabold flex items-center gap-2">
-            <div className="w-6 h-5 relative">
-              <Image
-                src="/rocket.png"
-                fill
-                className="object-cover"
-                alt="icon"
-              />
+          <div className="text-[#00E7F9] text-shadow-xs font-extrabold flex items-center gap-1 ">
+            <div className="w-5 h-5 md:w-7 md:h-7 relative">
+              <Image src="/rocket.png" fill alt="icon" />
             </div>
             FRESH BEGINNINGS SALE:
           </div>
@@ -24,8 +20,9 @@ export default function Home() {
           Limited Spots - start your journey today!
         </span>
       </div>
+
+      {/* Hero section */}
       <div className="max-w-[1440px] md:px-[160px] mx-auto">
-        {/* Hero section */}
         <div className="pt-[35px] flex justify-center md:justify-between">
           <div className="flex items-center justify-center relative w-full md:w-auto">
             <Image src="/logo.svg" height={74} width={173.12} alt="logo" />
@@ -52,7 +49,7 @@ export default function Home() {
 
         {/* Main */}
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
-          <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2 px-5 md:px-0">
+          <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2 px-3 md:px-0">
             <div className="relative w-full h-[400px] md:w-[666px] md:h-[679px]  ">
               <Image
                 src="/hero-image.png"
