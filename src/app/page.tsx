@@ -38,10 +38,10 @@ export default function Home() {
           </div>
 
           <div className="hidden md:flex gap-[40px] mr-15">
-            <Link href="/" className="text-[18px] text-[#A9A9A9]">
+            <Link href="/" className="text-[18px] text-[#A9A9A9] font-semibold">
               About us
             </Link>
-            <Link href="/" className="text-[18px] text-[#A9A9A9]">
+            <Link href="/" className="text-[18px] text-[#A9A9A9] font-semibold">
               Contact
             </Link>
           </div>
@@ -59,7 +59,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0 md:-mr-20">
+          <div className="md:mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0 md:-mr-20">
             <h2 className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] font-bold leading-10">
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h2>
@@ -79,7 +79,7 @@ export default function Home() {
                 width={25}
                 alt="point"
               />
-              <p className="text-[16px]">
+              <p className="text-[16px] font-semibold">
                 Start growing your influence right away—no waiting required!
               </p>
             </div>
@@ -91,7 +91,7 @@ export default function Home() {
                 alt="point"
                 style={{ objectFit: "contain" }}
               />
-              <p className="text-[16px]">
+              <p className="text-[16px] font-semibold">
                 Create viral TikToks and Reels step by step with easy-to-follow
                 lessons
               </p>
@@ -104,7 +104,7 @@ export default function Home() {
                 style={{ objectFit: "contain" }}
                 alt="point"
               />
-              <p className="text-[16px]">
+              <p className="text-[16px] font-semibold">
                 Use a Personal AI Worker to boost your content
               </p>
             </div>
@@ -116,14 +116,14 @@ export default function Home() {
                 alt="point"
                 style={{ objectFit: "contain" }}
               />
-              <p className="text-[16px]">
+              <p className="text-[16px] font-semibold">
                 Learn from expert-led courses designed for aspiring influencers
               </p>
             </div>
             <div className="flex flex-col items-center md:items-start ">
               <div className="order-2 md:order-1 pb-10 md:pb-0 w-[313px]">
                 <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
-                  <span className="text=[20px]">GET STARTED</span>
+                  <p className="text-[20px] font-bold">GET STARTED</p>
                   <Image
                     src="/arrow-right.png"
                     alt="icon"
@@ -132,17 +132,17 @@ export default function Home() {
                   />
                 </button>
 
-                <p className="mt-2.5 text-center">
+                <p className="mt-2.5 text-center text-[12px]">
                   1-minute quiz for personalized Insights
                 </p>
               </div>
 
               <div className="order-1 md:order-2 text-center md:text-left">
-                <p className="text-[#ABABAB] text-[12px] mt-[30px]">
+                <p className="text-[#ABABAB] text-[12px] mt-[30px] font-medium">
                   By clicking &quot;Get Started&quot;, you agree with Terms and
                   Conditions, Privacy Policy, Subscription Terms
                 </p>
-                <p className="text-[#ABABAB] text-[10px] mt-[12px]">
+                <p className="text-[#ABABAB] text-[10px] mt-[12px] font-medium">
                   Fametonic 2025 ©All Rights Reserved.
                 </p>
               </div>
