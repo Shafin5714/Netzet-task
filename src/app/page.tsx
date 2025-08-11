@@ -7,7 +7,7 @@ export default function Home() {
       {/* Nav Section */}
       <div className="text-[16px] w-full  md:text-[22px] h-[76px] md:h-[46px] flex flex-col md:flex-row items-center md:gap-1 justify-center bg-linear-to-r/srgb from-[#FC004E] to-[#10CBE0] px-2 md:px-0">
         <div className="flex items-center gap-1">
-          <div className="text-[#00E7F9] text-shadow-xs font-extrabold flex items-center gap-1 ">
+          <div className="text-[#00E7F9] font-extrabold flex items-center gap-1 ">
             <div className="w-5 h-5 md:w-7 md:h-7 relative">
               <Image src="/rocket.png" fill alt="icon" />
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
             >
               Discover your way to success with Fametonic:
             </h2>
-            <div className="flex gap-2.5 mt-[16px] items-start justify-start">
+            <div className="flex gap-2.5 mt-[16px] items-center  justify-start">
               <Image
                 src="/star.png"
                 style={{ objectFit: "contain" }}
@@ -83,7 +83,7 @@ export default function Home() {
                 Start growing your influence right away—no waiting required!
               </p>
             </div>
-            <div className="flex gap-2.5 mt-[13px] items-start justify-start">
+            <div className="flex gap-2.5 mt-[13px] items-center justify-start">
               <Image
                 src="/star.png"
                 height={22}
@@ -96,7 +96,7 @@ export default function Home() {
                 lessons
               </p>
             </div>
-            <div className="flex gap-2.5 mt-[13px] items-start justify-start">
+            <div className="flex gap-2.5 mt-[13px] items-center justify-start">
               <Image
                 src="/star.png"
                 height={22}
@@ -108,7 +108,7 @@ export default function Home() {
                 Use a Personal AI Worker to boost your content
               </p>
             </div>
-            <div className="flex gap-2.5 mt-[13px] items-start justify-start">
+            <div className="flex gap-2.5 mt-[13px] items-center justify-start">
               <Image
                 src="/star.png"
                 height={22}
@@ -121,7 +121,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center md:items-start ">
-              <div className="order-2 md:order-1 pb-10 md:pb-0">
+              <div className="order-2 md:order-1 pb-10 md:pb-0 w-[313px]">
                 <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
                   <span className="text=[20px]">GET STARTED</span>
                   <Image
@@ -132,7 +132,7 @@ export default function Home() {
                   />
                 </button>
 
-                <p className="mt-2.5">
+                <p className="mt-2.5 text-center">
                   1-minute quiz for personalized Insights
                 </p>
               </div>
