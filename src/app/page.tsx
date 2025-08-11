@@ -66,7 +66,7 @@ export default function Home() {
             <h2
               className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] text-[#00E7F9] font-bold leading-10 mt-1"
               style={{
-                textShadow: "0px 3px 0 #C2003C",
+                textShadow: "0px 4px 3px #CD003F",
               }}
             >
               Discover your way to success with Fametonic:
