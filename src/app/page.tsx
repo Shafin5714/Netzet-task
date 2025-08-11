@@ -24,7 +24,7 @@ export default function Home() {
           Limited Spots - start your journey today!
         </span>
       </div>
-      <div className="max-w-[70rem] mx-auto">
+      <div className="max-w-[1440px] md:px-[160px] mx-auto">
         {/* Hero section */}
         <div className="pt-[35px] flex justify-center md:justify-between">
           <div className="flex items-center justify-center relative w-full md:w-auto">
@@ -40,7 +40,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="hidden md:flex gap-[40px] mr-13">
+          <div className="hidden md:flex gap-[40px] mr-15">
             <Link href="/" className="text-[18px] text-[#A9A9A9]">
               About us
             </Link>
@@ -51,8 +51,8 @@ export default function Home() {
         </div>
 
         {/* Main */}
-        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-0 relative z-20">
-          <div className="flex justify-center md:justify-start md:flex-shrink-0 md:-ml-40 -z-10 order-1 md:order-2">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
+          <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2">
             <div className="relative w-[350px] h-[400px] md:w-[666px] md:h-[679px]">
               <Image
                 src="/hero-image.png"
@@ -62,7 +62,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0">
+          <div className="mt-[56px]  w-full md:w-[516px] order-2 md:order-1 px-5 md:px-0 md:-mr-20">
             <h2 className="text-[25px] font-urbanist text-center md:text-left md:text-[35px] font-bold leading-10">
               Want to Turn Social Media Into a Profitable Career?{" "}
             </h2>
@@ -124,19 +124,31 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col items-center md:items-start">
-              <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
-                <span className="text=[20px]">GET STARTED</span>
-                <Image src="/arrow-right.png" alt="icon" height={5} width={8} />
-              </button>
+              <div className="order-2 md:order-1">
+                <button className="shadow-[2px_2px_10px_#00f0ff] cursor-pointer mt-[30px] w-[313px] h-[40px] bg-[#FC004E] rounded-lg font-figtree font-bold flex justify-center items-center gap-2">
+                  <span className="text=[20px]">GET STARTED</span>
+                  <Image
+                    src="/arrow-right.png"
+                    alt="icon"
+                    height={5}
+                    width={8}
+                  />
+                </button>
 
-              <p className="mt-2.5">1-minute quiz for personalized Insights</p>
-              <p className="text-[#ABABAB] text-[12px] mt-[30px]">
-                By clicking &quot;Get Started&quot;, you agree with Terms and
-                Conditions, Privacy Policy, Subscription Terms
-              </p>
-              <p className="text-[#ABABAB] text-[10px] mt-[12px]">
-                Fametonic 2025 ©All Rights Reserved.
-              </p>
+                <p className="mt-2.5">
+                  1-minute quiz for personalized Insights
+                </p>
+              </div>
+
+              <div className="order-1 md:order-2 text-center md:text-left">
+                <p className="text-[#ABABAB] text-[12px] mt-[30px]">
+                  By clicking &quot;Get Started&quot;, you agree with Terms and
+                  Conditions, Privacy Policy, Subscription Terms
+                </p>
+                <p className="text-[#ABABAB] text-[10px] mt-[12px]">
+                  Fametonic 2025 ©All Rights Reserved.
+                </p>
+              </div>
             </div>
           </div>
         </div>
