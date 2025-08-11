@@ -50,7 +50,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="grid grid-cols-1 md:grid-cols-[1fr_auto] relative z-20">
           <div className="flex justify-center md:justify-end md:flex-shrink-0 -z-10 order-1 md:order-2 px-3 md:px-0">
-            <div className="relative w-full h-[400px] md:w-[666px] md:h-[679px]">
+            <div className="relative w-full h-[370px] md:w-[666px] md:h-[679px]">
               <Image
                 src="/hero-image.png"
                 alt="Hero image"
